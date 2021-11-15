@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		eA8dQ8s2af+7Y7Gx1DUEzq1JPDs=
+		yV8hQZbjhHT6C7rlXEnL077F9bU=
 		</data>
 		<key>flutter_assets/assets/logo.svg</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		M3VJqLfgGhNBBc7bnCg/R82vncs=
+		8EuATGCV6aganM0uL3gYVScOdlc=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		UdHeA7tIMCpbFhBUxDH0oVYyXTw=
+		99K+0D5UTYjV9zEajBjbjTTbWM4=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		N3yeOSMCf4An/ChKQ9TOcDyZFjQ=
+		cuieaQ9j+9gCTKYPRhW1tc4y4co=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -77,11 +77,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eA8dQ8s2af+7Y7Gx1DUEzq1JPDs=
+			yV8hQZbjhHT6C7rlXEnL077F9bU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QjtT7pWGEpCpDtnPTFAvaLKO55qFzampWj8BbkHitnk=
+			VUfhMoWjTfSyxzjgZC53Rc+BMT5cxS4UNlsjBFsm0RA=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/logo.svg</key>
@@ -121,22 +121,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M3VJqLfgGhNBBc7bnCg/R82vncs=
+			8EuATGCV6aganM0uL3gYVScOdlc=
 			</data>
 			<key>hash2</key>
 			<data>
-			RVJ+N7lBevx8a3ahq9BBmq4vlwg/auXrp/kh955zRKc=
+			Y3CgrKgBihz2YWac6DS5qW1gKhBB8yTOAeP7yZ4Xtwk=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UdHeA7tIMCpbFhBUxDH0oVYyXTw=
+			99K+0D5UTYjV9zEajBjbjTTbWM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y5/z9cZofe4IXerNPjGJ+/4mn9DC55OTfC214SKsgDQ=
+			CgoOEvq78ttAcaljE932P+wAcciP+0KVnXpScnAoRWc=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -154,11 +154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N3yeOSMCf4An/ChKQ9TOcDyZFjQ=
+			cuieaQ9j+9gCTKYPRhW1tc4y4co=
 			</data>
 			<key>hash2</key>
 			<data>
-			nPf1qumdrqcORnJ50GwsYD9Mmasns004xQN8/FVT7GU=
+			nc7zSGd5LPg51+X2B4gM/FLTg8moyL55+ErAW3mTHI0=
 			</data>
 		</dict>
 	</dict>

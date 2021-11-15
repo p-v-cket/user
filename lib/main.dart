@@ -1,34 +1,51 @@
+import 'package:custom/provider/authProvider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:custom/colors.dart';
-import 'package:custom/idCard.dart';
-import 'package:custom/scrollView.dart';
-import 'package:custom/signInPage.dart';
-import 'package:custom/logInPage.dart';
+import 'package:custom/page/widgets/idCard.dart';
+import 'package:custom/page/widgets/scrollView.dart';
+import 'package:custom/page/logInPage.dart';
+import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(
+  MultiProvider(
+    providers: [
+      ChangeNotifierProvider.value(value: AuthProvider())
+    ],
+    child: MyApp()
+  )
+);
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
       // Replace the 3 second delay with your initialization code:
-      future: Future.delayed(Duration(seconds: 3)),
+      future: Provider.of<AuthProvider>(context, listen: true).isValid(),
       builder: (context, AsyncSnapshot snapshot) {
         // Show splash screen while waiting for app resources to load:
-        if (snapshot.connectionState == ConnectionState.waiting && false) {
+        if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
-            home: Splash(),
-          );
-        } else {
-          // Loading is done, return the app:
-          return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'P()cket Master',
             theme: ThemeData(
               primarySwatch: CUSTOMblueM,
             ),
-            home: MyHomePage(),
+            home: snapshot.data ? MyHomePage() : LogInPage(),
+          );
+        } else {
+          // Loading is done, return the app:
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'P()cket Master',
+            theme: ThemeData(
+              primarySwatch: CUSTOMblueM,
+            ),
+            home: Scaffold(
+              backgroundColor: CUSTOMblue,
+              body: Center(child: CircularProgressIndicator())
+            ),
           );
         }
       },
@@ -92,7 +109,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Provider.of<AuthProvider>(context, listen: false).logout();
+            },
             icon: Icon(
               Icons.settings,
               color: Colors.black,
