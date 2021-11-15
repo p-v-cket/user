@@ -63,12 +63,23 @@ class _LogInPageState extends State<LogInPage> {
       body: new Container(
         color: CUSTOMblue,
         padding: EdgeInsets.all(16.0),
-        child: new ListView(
+        child: Column(
           children: <Widget>[
-            _buildTextFields(),
-            _buildButtons(),
+            Padding(
+              padding: EdgeInsets.all(40.0),
+              child: Image.asset('assets/main_logo.png'),
+            ),
+            ListView(
+              shrinkWrap: true,
+              children: <Widget>[
+                _buildTextFields(),
+                _buildButtons(),
+              ],
+            ),
+
           ],
-        ),
+        )
+
       ),
     );
   }
@@ -111,7 +122,7 @@ class _LogInPageState extends State<LogInPage> {
     client.login(_id, _password).then((value) {
       print(value);
       Provider.of<AuthProvider>(context, listen: false).setAccessToken(value);
-      
+
       client.authTest("Bearer $value").then((value) => print(value));
     }).catchError((e) {
       print('Wrong password!');
