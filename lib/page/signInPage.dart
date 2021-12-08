@@ -109,11 +109,11 @@ class _SignInPageState extends State<SignInPage> {
     return new Container(
       child: new Column(
         children: <Widget>[
-          InputBlank('이름', _nameFilter).build(),
-          InputBlank('연락처', _phoneFilter).build(),
-          InputBlank('주소', _addressFilter).build(),
-          InputBlank('비밀번호', _passwordFilter).build(),
-          InputBlank('개인정보 수집 동의', _agreeFilter).build(),
+          InputBlank('이름', _nameFilter, false).build(),
+          InputBlank('연락처', _phoneFilter, false).build(),
+          InputBlank('주소', _addressFilter, false).build(),
+          InputBlank('비밀번호', _passwordFilter, true).build(),
+          InputBlank('개인정보 수집 동의', _agreeFilter, false).build(),
         ],
       ),
     );
