@@ -97,21 +97,15 @@ class _LogInPageState extends State<LogInPage> {
 
   Widget _buildButtons() {
     return new Container(
-      child: new Row(
+      child: new Column(
         children: <Widget>[
-          new ElevatedButton(
-            child: new Text('Login'),
-            onPressed: _loginPressed,
-          ),
-          new ElevatedButton(
-            child: new Text('Sign Up'),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SignInPage()),
-              );
-            },
-          ),
+          ButtonDeco('Log In', _loginPressed),
+          ButtonDeco('Sign Up', () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SignInPage()),
+            );
+          }),
         ],
 
       ),

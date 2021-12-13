@@ -127,9 +127,13 @@ class _MyHomePageState extends State<MyHomePage> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 10, 0, 10),
                 child: SizedBox(
-                  child: Text(
+                  child:Text(
                     '전자출입카드',
-                    style: TextStyle(color: Colors.black, fontSize: 20),
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

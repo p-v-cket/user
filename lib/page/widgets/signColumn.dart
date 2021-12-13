@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:custom/colors.dart';
 class InputBlank{
   InputBlank(this.text, this.controller, this.obscure);
 
@@ -43,4 +43,22 @@ class InputBlank{
   }
 }
 
-
+Widget ButtonDeco(text, func) {
+  return Container(
+    margin: const EdgeInsets.fromLTRB(0,23,0,0),
+    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 0),
+    width: double.infinity,
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(15),
+    ),
+    child: TextButton(
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: TextStyle(color: CUSTOMblue, fontSize: 20, fontWeight: FontWeight.bold),
+      ),
+      onPressed: func,
+    ),
+  );
+}
